@@ -1,0 +1,448 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		69DC3C851B594D5600AF0DEC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 69DC3C841B594D5600AF0DEC /* main.m */; };
+		69DC3C881B594D5600AF0DEC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 69DC3C871B594D5600AF0DEC /* AppDelegate.m */; };
+		69DC3C8B1B594D5600AF0DEC /* FindPizza.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 69DC3C891B594D5600AF0DEC /* FindPizza.xcdatamodeld */; };
+		69DC3C8E1B594D5600AF0DEC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69DC3C8D1B594D5600AF0DEC /* ViewController.m */; };
+		69DC3C911B594D5600AF0DEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69DC3C8F1B594D5600AF0DEC /* Main.storyboard */; };
+		69DC3C931B594D5600AF0DEC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69DC3C921B594D5600AF0DEC /* Images.xcassets */; };
+		69DC3C961B594D5600AF0DEC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69DC3C941B594D5600AF0DEC /* LaunchScreen.xib */; };
+		69DC3CA21B594D5600AF0DEC /* FindPizzaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 69DC3CA11B594D5600AF0DEC /* FindPizzaTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		69DC3C9C1B594D5600AF0DEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 69DC3C771B594D5600AF0DEC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 69DC3C7E1B594D5600AF0DEC;
+			remoteInfo = FindPizza;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		69DC3C7F1B594D5600AF0DEC /* FindPizza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindPizza.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		69DC3C831B594D5600AF0DEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69DC3C841B594D5600AF0DEC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		69DC3C861B594D5600AF0DEC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		69DC3C871B594D5600AF0DEC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		69DC3C8A1B594D5600AF0DEC /* FindPizza.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FindPizza.xcdatamodel; sourceTree = "<group>"; };
+		69DC3C8C1B594D5600AF0DEC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		69DC3C8D1B594D5600AF0DEC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		69DC3C901B594D5600AF0DEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		69DC3C921B594D5600AF0DEC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		69DC3C951B594D5600AF0DEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		69DC3C9B1B594D5600AF0DEC /* FindPizzaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindPizzaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		69DC3CA01B594D5600AF0DEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69DC3CA11B594D5600AF0DEC /* FindPizzaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FindPizzaTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		69DC3C7C1B594D5600AF0DEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69DC3C981B594D5600AF0DEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		69DC3C761B594D5600AF0DEC = {
+			isa = PBXGroup;
+			children = (
+				69DC3C811B594D5600AF0DEC /* FindPizza */,
+				69DC3C9E1B594D5600AF0DEC /* FindPizzaTests */,
+				69DC3C801B594D5600AF0DEC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		69DC3C801B594D5600AF0DEC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				69DC3C7F1B594D5600AF0DEC /* FindPizza.app */,
+				69DC3C9B1B594D5600AF0DEC /* FindPizzaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		69DC3C811B594D5600AF0DEC /* FindPizza */ = {
+			isa = PBXGroup;
+			children = (
+				69DC3C861B594D5600AF0DEC /* AppDelegate.h */,
+				69DC3C871B594D5600AF0DEC /* AppDelegate.m */,
+				69DC3C8C1B594D5600AF0DEC /* ViewController.h */,
+				69DC3C8D1B594D5600AF0DEC /* ViewController.m */,
+				69DC3C8F1B594D5600AF0DEC /* Main.storyboard */,
+				69DC3C921B594D5600AF0DEC /* Images.xcassets */,
+				69DC3C941B594D5600AF0DEC /* LaunchScreen.xib */,
+				69DC3C891B594D5600AF0DEC /* FindPizza.xcdatamodeld */,
+				69DC3C821B594D5600AF0DEC /* Supporting Files */,
+			);
+			path = FindPizza;
+			sourceTree = "<group>";
+		};
+		69DC3C821B594D5600AF0DEC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				69DC3C831B594D5600AF0DEC /* Info.plist */,
+				69DC3C841B594D5600AF0DEC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		69DC3C9E1B594D5600AF0DEC /* FindPizzaTests */ = {
+			isa = PBXGroup;
+			children = (
+				69DC3CA11B594D5600AF0DEC /* FindPizzaTests.m */,
+				69DC3C9F1B594D5600AF0DEC /* Supporting Files */,
+			);
+			path = FindPizzaTests;
+			sourceTree = "<group>";
+		};
+		69DC3C9F1B594D5600AF0DEC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				69DC3CA01B594D5600AF0DEC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		69DC3C7E1B594D5600AF0DEC /* FindPizza */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69DC3CA51B594D5600AF0DEC /* Build configuration list for PBXNativeTarget "FindPizza" */;
+			buildPhases = (
+				69DC3C7B1B594D5600AF0DEC /* Sources */,
+				69DC3C7C1B594D5600AF0DEC /* Frameworks */,
+				69DC3C7D1B594D5600AF0DEC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FindPizza;
+			productName = FindPizza;
+			productReference = 69DC3C7F1B594D5600AF0DEC /* FindPizza.app */;
+			productType = "com.apple.product-type.application";
+		};
+		69DC3C9A1B594D5600AF0DEC /* FindPizzaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69DC3CA81B594D5600AF0DEC /* Build configuration list for PBXNativeTarget "FindPizzaTests" */;
+			buildPhases = (
+				69DC3C971B594D5600AF0DEC /* Sources */,
+				69DC3C981B594D5600AF0DEC /* Frameworks */,
+				69DC3C991B594D5600AF0DEC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				69DC3C9D1B594D5600AF0DEC /* PBXTargetDependency */,
+			);
+			name = FindPizzaTests;
+			productName = FindPizzaTests;
+			productReference = 69DC3C9B1B594D5600AF0DEC /* FindPizzaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		69DC3C771B594D5600AF0DEC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = mazoic;
+				TargetAttributes = {
+					69DC3C7E1B594D5600AF0DEC = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					69DC3C9A1B594D5600AF0DEC = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 69DC3C7E1B594D5600AF0DEC;
+					};
+				};
+			};
+			buildConfigurationList = 69DC3C7A1B594D5600AF0DEC /* Build configuration list for PBXProject "FindPizza" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 69DC3C761B594D5600AF0DEC;
+			productRefGroup = 69DC3C801B594D5600AF0DEC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				69DC3C7E1B594D5600AF0DEC /* FindPizza */,
+				69DC3C9A1B594D5600AF0DEC /* FindPizzaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		69DC3C7D1B594D5600AF0DEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69DC3C911B594D5600AF0DEC /* Main.storyboard in Resources */,
+				69DC3C961B594D5600AF0DEC /* LaunchScreen.xib in Resources */,
+				69DC3C931B594D5600AF0DEC /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69DC3C991B594D5600AF0DEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		69DC3C7B1B594D5600AF0DEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69DC3C881B594D5600AF0DEC /* AppDelegate.m in Sources */,
+				69DC3C851B594D5600AF0DEC /* main.m in Sources */,
+				69DC3C8E1B594D5600AF0DEC /* ViewController.m in Sources */,
+				69DC3C8B1B594D5600AF0DEC /* FindPizza.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69DC3C971B594D5600AF0DEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69DC3CA21B594D5600AF0DEC /* FindPizzaTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		69DC3C9D1B594D5600AF0DEC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 69DC3C7E1B594D5600AF0DEC /* FindPizza */;
+			targetProxy = 69DC3C9C1B594D5600AF0DEC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		69DC3C8F1B594D5600AF0DEC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69DC3C901B594D5600AF0DEC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		69DC3C941B594D5600AF0DEC /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69DC3C951B594D5600AF0DEC /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		69DC3CA31B594D5600AF0DEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		69DC3CA41B594D5600AF0DEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		69DC3CA61B594D5600AF0DEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FindPizza/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		69DC3CA71B594D5600AF0DEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FindPizza/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		69DC3CA91B594D5600AF0DEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FindPizzaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FindPizza.app/FindPizza";
+			};
+			name = Debug;
+		};
+		69DC3CAA1B594D5600AF0DEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FindPizzaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FindPizza.app/FindPizza";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		69DC3C7A1B594D5600AF0DEC /* Build configuration list for PBXProject "FindPizza" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69DC3CA31B594D5600AF0DEC /* Debug */,
+				69DC3CA41B594D5600AF0DEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69DC3CA51B594D5600AF0DEC /* Build configuration list for PBXNativeTarget "FindPizza" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69DC3CA61B594D5600AF0DEC /* Debug */,
+				69DC3CA71B594D5600AF0DEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		69DC3CA81B594D5600AF0DEC /* Build configuration list for PBXNativeTarget "FindPizzaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69DC3CA91B594D5600AF0DEC /* Debug */,
+				69DC3CAA1B594D5600AF0DEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		69DC3C891B594D5600AF0DEC /* FindPizza.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				69DC3C8A1B594D5600AF0DEC /* FindPizza.xcdatamodel */,
+			);
+			currentVersion = 69DC3C8A1B594D5600AF0DEC /* FindPizza.xcdatamodel */;
+			path = FindPizza.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 69DC3C771B594D5600AF0DEC /* Project object */;
+}
