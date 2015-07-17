@@ -102,7 +102,7 @@
     _currentFilterItem.categoryItem   = category;
     _currentFilterItem.distanceRadius = @"1000";
     _currentFilterItem.isOpen = @"NO";
-    _currentFilterItem.resultCount = @"20";
+    _currentFilterItem.resultCount = @"5";
     
     _currentFilterItem.userLocation = _userLocation;
     _currentFilterItem.sortByDistance = YES;

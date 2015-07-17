@@ -214,7 +214,6 @@
 				69DC3CED1B59520A00AF0DEC /* VenueDetailsViewController.h */,
 				69DC3CEE1B59520A00AF0DEC /* VenueDetailsViewController.m */,
 				69DC3C921B594D5600AF0DEC /* Images.xcassets */,
-				69DC3C891B594D5600AF0DEC /* FindPizza.xcdatamodeld */,
 				69DC3C821B594D5600AF0DEC /* Supporting Files */,
 			);
 			path = FindPizza;
@@ -272,6 +271,7 @@
 		69DC3CB71B594ECA00AF0DEC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				69DC3C891B594D5600AF0DEC /* FindPizza.xcdatamodeld */,
 				69DC3CBE1B594EF500AF0DEC /* CategoryItem.h */,
 				69DC3CBF1B594EF500AF0DEC /* CategoryItem.m */,
 				69DC3CB81B594ED600AF0DEC /* FilterItem.h */,
@@ -732,7 +732,8 @@
 				69DC3C8A1B594D5600AF0DEC /* FindPizza.xcdatamodel */,
 			);
 			currentVersion = 69DC3C8A1B594D5600AF0DEC /* FindPizza.xcdatamodel */;
-			path = FindPizza.xcdatamodeld;
+			name = FindPizza.xcdatamodeld;
+			path = ../FindPizza.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
