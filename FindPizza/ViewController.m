@@ -38,7 +38,7 @@
     // Do any additional setup after loading the view, typically from a nib.
     //Loading Configuration File
 
-
+    self.title = @"Find Pizza";
     
     
     [self startLocationService];
@@ -326,67 +326,22 @@
     
     return cell;
         
-    /*
-    static NSString *CellIdentifier = @"Cell";
-    VenueTableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    
-    if (cell == nil) {
-        cell = [[VenueTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
-    }
-    
-    CGFloat distance = [[_venueItemsArray objectAtIndex:[indexPath row]] venueDistance];
-    UIColor *cellColor = [Tools colorFromHexString:[[_currentFilterItem categoryItem] categoryColor] withAlpha:0.7];
-    
-    [[cell nameLabel] setText:[[_venueItemsArray objectAtIndex:[indexPath row]] venueName]];
-    [[cell nameLabel] setTextColor:[Tools colorFromHexString:[[_configDictionary objectForKey:@"generalTableView"] objectForKey:@"textColor"] withAlpha:1.0]];
-    [[cell categoryLabel] setText:[[[_venueItemsArray objectAtIndex:[indexPath row]] venueCategoryItem] categoryName]];
-    [[cell categoryLabel] setTextColor:[Tools colorFromHexString:[[_configDictionary objectForKey:@"generalTableView"] objectForKey:@"detailTextColor1"] withAlpha:1.0]];
-    
-    [[cell ratingValue] setTitle:[[_venueItemsArray objectAtIndex:[indexPath row]] rating]!=0?[NSString stringWithFormat:@"%.1f/10",[[_venueItemsArray objectAtIndex:[indexPath row]] rating]]:@"" forState:UIControlStateNormal];
-    [[cell ratingValue] setBackgroundColor:cellColor];
-    [[cell ratingValue] setHidden:[[_venueItemsArray objectAtIndex:[indexPath row]] rating]!=0?NO:YES];
-    [[cell ratingLabel] setHidden:[[_venueItemsArray objectAtIndex:[indexPath row]] rating]!=0?NO:YES];
-    [[cell ratingLabel] setTextColor:[Tools colorFromHexString:[[_configDictionary objectForKey:@"generalTableView"] objectForKey:@"detailTextColor1"] withAlpha:1.0]];
-    
-    [[cell likeIcon] setIconColor:cellColor];
-    [[cell peopleIcon] setIconColor:cellColor];
-    [[cell distanceIcon] setIconColor:cellColor];
-    
-    [[cell likesLabel] setText:[NSString stringWithFormat:@"%ld",(long)[[[_venueItemsArray objectAtIndex:[indexPath row]] venueLikesCount] integerValue]]];
-    
-    [[cell likesLabel] setText:[NSString stringWithFormat:@"%@",[[_venueItemsArray objectAtIndex:[indexPath row]] venueLikesCount]]];
-    [[cell likesLabel] setTextColor:cellColor];
-    
-    [[cell peopleLabel] setText:[NSString stringWithFormat:@"%@",[[_venueItemsArray objectAtIndex:[indexPath row]] venueUsersCount]]];
-    [[cell peopleLabel] setTextColor:cellColor];
-    
-    [[cell distanceLabel] setText:distance<1000?[NSString stringWithFormat:@"%dm",(int)distance]:[NSString stringWithFormat:@"%.1fkm",(distance/1000)]];
-    [[cell distanceLabel] setTextColor:cellColor];
-    
-    [[cell photoView]
-     setImageWithURL:[NSURL URLWithString:[[_venueItemsArray objectAtIndex:[indexPath row]] photo]]
-     placeholderImage:[UIImage imageNamed:[[_configDictionary objectForKey:@"application"] objectForKey:@"cellPhotoPlaceholderImage"]]
-     animated:YES duration:0.8
-     ];
-    return cell;
-    
-    */
     
     
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [[self tableView] deselectRowAtIndexPath:indexPath animated:YES];
+#pragma mark - UITableViewDelegate
+- (void)tableView:(UITableView * )tableView
+didSelectRowAtIndexPath:(NSIndexPath * )indexPath
+{
+    VenueItem * item = _venueItemsArray[indexPath.row];
     
-    if ([Tools isNetworkAvailable]) {
-        VenueDetailsViewController *vdvc = [[VenueDetailsViewController alloc] init];
-        [vdvc setCurrentVenue:[_venueItemsArray objectAtIndex:[indexPath row]]];
-        [vdvc setConfigDictionary:_configDictionary];
-        [[self navigationController] pushViewController:vdvc animated:YES];
-    }
-    else if(![Tools isNetworkAvailable]) {
-        [Tools showNetworkError];
-    }
+    VenueDetailsViewController * vc = [VenueDetailsViewController new];
+    
+    vc.currentVenue = item;
+    
+    [self.navigationController pushViewController:vc animated:YES];
+    
 }
 /******************************** TABLEVIEW DELEGATE METHODS ************************************/
 

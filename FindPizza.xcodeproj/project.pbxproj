@@ -54,6 +54,7 @@
 		69DC3D201B59563900AF0DEC /* New_York_Trip.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 69DC3D1F1B59563900AF0DEC /* New_York_Trip.gpx */; };
 		69DC3D231B595B5600AF0DEC /* VeneueCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69DC3D221B595B5600AF0DEC /* VeneueCell.xib */; };
 		69DC3D261B595BA500AF0DEC /* VeneneCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 69DC3D251B595BA500AF0DEC /* VeneneCell.m */; };
+		69DC3D281B595FDD00AF0DEC /* VenueDetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69DC3D271B595FDD00AF0DEC /* VenueDetailsView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -154,6 +155,7 @@
 		69DC3D221B595B5600AF0DEC /* VeneueCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VeneueCell.xib; sourceTree = "<group>"; };
 		69DC3D241B595BA500AF0DEC /* VeneneCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VeneneCell.h; sourceTree = "<group>"; };
 		69DC3D251B595BA500AF0DEC /* VeneneCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VeneneCell.m; sourceTree = "<group>"; };
+		69DC3D271B595FDD00AF0DEC /* VenueDetailsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VenueDetailsView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -369,6 +371,7 @@
 				69DC3C8F1B594D5600AF0DEC /* Main.storyboard */,
 				69DC3C941B594D5600AF0DEC /* LaunchScreen.xib */,
 				69DC3D221B595B5600AF0DEC /* VeneueCell.xib */,
+				69DC3D271B595FDD00AF0DEC /* VenueDetailsView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -455,6 +458,7 @@
 			files = (
 				69DC3CEA1B5950E000AF0DEC /* LICENSE.txt in Resources */,
 				69DC3CAC1B594D6200AF0DEC /* Config.plist in Resources */,
+				69DC3D281B595FDD00AF0DEC /* VenueDetailsView.xib in Resources */,
 				69DC3D201B59563900AF0DEC /* New_York_Trip.gpx in Resources */,
 				69DC3C911B594D5600AF0DEC /* Main.storyboard in Resources */,
 				69DC3C961B594D5600AF0DEC /* LaunchScreen.xib in Resources */,
