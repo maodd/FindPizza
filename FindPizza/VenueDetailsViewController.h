@@ -9,7 +9,7 @@
 
 
 
-#import "VenueItem.h"
+#import "VenueItem_j.h"
 
 @interface VenueDetailsViewController : UIViewController<MBProgressHUDDelegate>  {
   
@@ -17,7 +17,7 @@
 
 @property (retain, nonatomic) MBProgressHUD         *HUD;
 @property (retain, nonatomic) UITableView           *detailsTableView;
-@property (nonatomic, retain) VenueItem             *currentVenue;
+@property (nonatomic, retain) VenueItem_j             *currentVenue;
 
 
 @end

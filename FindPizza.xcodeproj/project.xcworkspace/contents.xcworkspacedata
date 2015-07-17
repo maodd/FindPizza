@@ -2,12 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:../FindPizza/Model/VenueItem_j.h">
-   </FileRef>
-   <FileRef
-      location = "group:../FindPizza/Model/VenueItem_j.m">
-   </FileRef>
-   <FileRef
       location = "self:FindPizza.xcodeproj">
    </FileRef>
 </Workspace>

@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "VenueItem_j.h"
+#import "VenueItem.h"
 
 @interface AppDelegate ()
 
@@ -14,6 +16,10 @@
 
 @implementation AppDelegate
 
++ (AppDelegate*)globalDelegate
+{
+    return (AppDelegate*)[UIApplication sharedApplication].delegate;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
@@ -75,6 +81,7 @@
     
     _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
     NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"FindPizza.sqlite"];
+    NSLog(@"storeURL: %@", storeURL);
     NSError *error = nil;
     NSString *failureReason = @"There was an error creating or loading the application's saved data.";
     if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:nil error:&error]) {
@@ -123,5 +130,122 @@
         }
     }
 }
+
+- (void)addVenue:(VenueItem*)venueItem
+{
+    VenueItem_j * oldVenue = [self getVenueById:venueItem.venueId];
+    if (oldVenue)
+    {
+        NSLog(@"%@ already exist.", venueItem.venueId);
+        [self.managedObjectContext deleteObject:oldVenue];
+
+    }
+    
+    VenueItem_j *newVenue = [NSEntityDescription
+                                    
+                                    insertNewObjectForEntityForName:@"VenueItem_j"
+                                    
+                                    inManagedObjectContext:self.managedObjectContext];
+
+    newVenue.venueId = venueItem.venueId;
+    newVenue.venueName = venueItem.venueName;
+    newVenue.venueAddress = venueItem.venueAddress;
+    newVenue.venueDistance = [NSNumber numberWithFloat:venueItem.venueDistance];
+    newVenue.venuePhone = venueItem.venuePhone;
+    newVenue.venueLikesCount = venueItem.venueLikesCount;
+    newVenue.venueUsersCount = venueItem.venueUsersCount;
+    newVenue.venueCheckinsCount = venueItem.venueCheckinsCount;
+    newVenue.rating = [NSNumber numberWithFloat:venueItem.rating];
+    newVenue.openStatus = venueItem.openStatus;
+    newVenue.tip = venueItem.tip;
+    
+//    NSError *error = nil;
+//    
+//    if (![newVenue.managedObjectContext save:&error]) {
+//        NSLog(@"Unable to save managed object context.");
+//        NSLog(@"%@, %@", error, error.localizedDescription);
+//    }
+    
+}
+
+- (VenueItem_j*)getVenueById:(NSString*)venueId
+{
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    
+    NSEntityDescription *entity =
+    
+    [NSEntityDescription entityForName:@"VenueItem_j"
+     
+                inManagedObjectContext:self.managedObjectContext];
+    
+    [request setEntity:entity];
+    
+    
+    
+    NSPredicate *predicate =
+    
+    [NSPredicate predicateWithFormat:@"venueId == %@", venueId];
+    
+    [request setPredicate:predicate];
+    
+    
+    
+    NSError *error;
+    
+    NSArray *array = [self.managedObjectContext executeFetchRequest:request error:&error];
+    
+    if (array != nil) {
+        
+        return array.firstObject;
+        
+    }
+    
+    else {
+        
+        // Deal with error.
+        
+    }
+    
+    return nil;
+}
+
+- (NSArray*)getAllVenues
+{
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    
+    NSEntityDescription *entity =
+    
+    [NSEntityDescription entityForName:@"VenueItem_j"
+     
+                inManagedObjectContext:self.managedObjectContext];
+    
+    [request setEntity:entity];
+    
+    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc]
+                                        
+                                        initWithKey:@"venueDistance" ascending:YES];
+    
+    [request setSortDescriptors:@[sortDescriptor]];
+    
+    
+    NSError *error;
+    
+    NSArray *array = [self.managedObjectContext executeFetchRequest:request error:&error];
+    
+    if (array != nil) {
+        
+        return array;
+        
+    }
+    
+    else {
+        
+        // Deal with error.
+        
+    }
+    
+    return nil;
+}
+
 
 @end

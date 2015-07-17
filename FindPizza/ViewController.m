@@ -12,9 +12,9 @@
 #import "VenueItem.h"
 #import <CoreLocation/CoreLocation.h>
 #import "VeneneCell.h"
-
+#import "AppDelegate.h"
 #import "VenueDetailsViewController.h"
- 
+#import "VenueItem_j.h"
 
 
 #define kDataLoadedSuccessNotification @"kDataLoadedSuccessNotification"
@@ -233,6 +233,21 @@
                  _venueItemsArray = [[NSMutableArray alloc] initWithArray:[Tools getSortedArray:_venueItemsArray sortBy:@"venueLikesCount" ascending:NO]];
              }
          }
+         
+         //  save to core data
+         
+         for (VenueItem * venueItem in _venueItemsArray) {
+             [[AppDelegate globalDelegate] addVenue:venueItem];
+         }
+         [[AppDelegate globalDelegate] saveContext];
+         
+         _venueItemsArray = [[[AppDelegate globalDelegate] getAllVenues] mutableCopy];
+         
+         _venueItemsArray = [[_venueItemsArray subarrayWithRange:NSMakeRange(0, 5)] mutableCopy]; //only need 5 for task
+         
+         
+         [[NSNotificationCenter defaultCenter] postNotificationName:kDataLoadedSuccessNotification object:nil];
+         
          [self loadingDataFinishedWithSuccessStatus:YES];
      }
                                                     failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error, id JSON)
@@ -277,8 +292,7 @@
         [Tools showViewWithTransition:[self tableView] duration:0.5 andAlpha:1.0];
 
         
-        // TODO: user notification center instead.
-        [[NSNotificationCenter defaultCenter] postNotificationName:kDataLoadedSuccessNotification object:nil];
+
         
         if ([_venueItemsArray count]==0) {
             UIAlertView *alert = [[UIAlertView alloc]
@@ -341,10 +355,10 @@
         
     }
     
-    VenueItem * venue = _venueItemsArray[indexPath.row];
+    VenueItem_j * venue = _venueItemsArray[indexPath.row];
     cell.name.text = venue.venueName;
     cell.address.text = venue.venueAddress;
-    cell.distance.text = [NSString stringWithFormat:@"%.0fm", venue.venueDistance];
+    cell.distance.text = [NSString stringWithFormat:@"%.0fm", venue.venueDistance.floatValue];
     
     return cell;
         

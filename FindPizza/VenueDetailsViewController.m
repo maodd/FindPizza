@@ -51,7 +51,7 @@
     self.checkinsCountLabel.text = [NSString stringWithFormat:@"%d", self.currentVenue.venueCheckinsCount.intValue];
     self.addressLabel.text = _currentVenue.venueAddress;
     self.phoneLabel.text = _currentVenue.venuePhone;
-    self.ratingLabel.text = [NSString stringWithFormat:@"%.1f/10", _currentVenue.rating];
+    self.ratingLabel.text = [NSString stringWithFormat:@"%.1f/10", _currentVenue.rating.floatValue];
     self.tipLabel.text = _currentVenue.tip;
  
     self.openStatusLabel.text = _currentVenue.openStatus;

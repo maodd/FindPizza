@@ -13,5 +13,14 @@
 
 @dynamic venueName;
 @dynamic venueAddress;
+@dynamic venueId;
+@dynamic venueDistance;
+@dynamic venuePhone;
+@dynamic openStatus;
+@dynamic venueCheckinsCount;
+@dynamic venueUsersCount;
+@dynamic venueLikesCount;
+@dynamic rating;
+@dynamic tip;
 
 @end
