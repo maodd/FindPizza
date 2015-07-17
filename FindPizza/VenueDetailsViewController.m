@@ -1,7 +1,7 @@
 //
 //  VenueDetailsViewController.m
 //
-//  Created by İlyas Doğruer
+//  Created by Frank Mao on 2015-07-17
 //
 
 #import "VenueDetailsViewController.h"

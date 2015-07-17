@@ -43,7 +43,7 @@
     
     [self startLocationService];
     
-    
+ 
 
 }
 
@@ -116,6 +116,11 @@
 }
 
 -(void)loadData {
+    
+    _HUD = [MBProgressHUD showHUDAddedTo:self.navigationController.view animated:YES];
+    _HUD.delegate=self;
+    
+    
     if (![Tools isLocationServiceEnabled]) {
         [Tools showLocationServicesErrorByType:@"locationServicesDisabledError"];
         [_HUD hide:YES];
@@ -127,7 +132,7 @@
         }
         else {
             [_HUD show:YES];
-            _HUD.labelText=NSLocalizedString(@"LoadingText", @"");
+            _HUD.labelText=NSLocalizedString(@"Loading", @"");
             _HUD.mode = MBProgressHUDAnimationFade;
             [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
             [[self tableView] setAlpha:0];
