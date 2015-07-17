@@ -55,6 +55,7 @@
 		69DC3D231B595B5600AF0DEC /* VeneueCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69DC3D221B595B5600AF0DEC /* VeneueCell.xib */; };
 		69DC3D261B595BA500AF0DEC /* VeneneCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 69DC3D251B595BA500AF0DEC /* VeneneCell.m */; };
 		69DC3D281B595FDD00AF0DEC /* VenueDetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69DC3D271B595FDD00AF0DEC /* VenueDetailsView.xib */; };
+		69DC3D2B1B5967A900AF0DEC /* VenueItem_j.m in Sources */ = {isa = PBXBuildFile; fileRef = 69DC3D2A1B5967A900AF0DEC /* VenueItem_j.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -156,6 +157,8 @@
 		69DC3D241B595BA500AF0DEC /* VeneneCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VeneneCell.h; sourceTree = "<group>"; };
 		69DC3D251B595BA500AF0DEC /* VeneneCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VeneneCell.m; sourceTree = "<group>"; };
 		69DC3D271B595FDD00AF0DEC /* VenueDetailsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VenueDetailsView.xib; sourceTree = "<group>"; };
+		69DC3D291B5967A900AF0DEC /* VenueItem_j.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VenueItem_j.h; sourceTree = "<group>"; };
+		69DC3D2A1B5967A900AF0DEC /* VenueItem_j.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VenueItem_j.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -271,6 +274,8 @@
 		69DC3CB71B594ECA00AF0DEC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				69DC3D291B5967A900AF0DEC /* VenueItem_j.h */,
+				69DC3D2A1B5967A900AF0DEC /* VenueItem_j.m */,
 				69DC3C891B594D5600AF0DEC /* FindPizza.xcdatamodeld */,
 				69DC3CBE1B594EF500AF0DEC /* CategoryItem.h */,
 				69DC3CBF1B594EF500AF0DEC /* CategoryItem.m */,
@@ -496,6 +501,7 @@
 				69DC3C851B594D5600AF0DEC /* main.m in Sources */,
 				69DC3D261B595BA500AF0DEC /* VeneneCell.m in Sources */,
 				69DC3D1C1B5952C700AF0DEC /* UIImage+WebP.m in Sources */,
+				69DC3D2B1B5967A900AF0DEC /* VenueItem_j.m in Sources */,
 				69DC3CC51B594FC800AF0DEC /* Tools.m in Sources */,
 				69DC3CCA1B59500400AF0DEC /* Reachability.m in Sources */,
 				69DC3CBC1B594ED600AF0DEC /* FilterItem.m in Sources */,

@@ -17,6 +17,7 @@
  
 
 
+#define kDataLoadedSuccessNotification @"kDataLoadedSuccessNotification"
 
 
 
@@ -143,7 +144,18 @@
     }
 }
 
+- (void)reloadTableView
+{
+    [self.tableView reloadData];
+    
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:kDataLoadedSuccessNotification object:nil];
+}
+
+
 -(void)getVenues {
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reloadTableView) name:kDataLoadedSuccessNotification object:nil];
+    
     NSURL *requestURL = [NSURL URLWithString:[self configureRequestURLWithApiType:[_currentFilterItem apiType]
                                                                        categoryId:[[_currentFilterItem categoryItem] categoryId]
                                                                    distanceRadius:[_currentFilterItem distanceRadius]
@@ -257,11 +269,16 @@
 }
 
 -(void)loadingDataFinishedWithSuccessStatus:(BOOL)success {
+    
+    
+    
     if (success) {
         [[self tableView] setTableFooterView:[_venueItemsArray count]!=0?[[UIImageView alloc] initWithImage:[UIImage imageNamed:[[_configDictionary objectForKey:@"foursquare"] objectForKey:@"foursquareFooterImage"]]]:nil];
         [Tools showViewWithTransition:[self tableView] duration:0.5 andAlpha:1.0];
-        [[self tableView] setUserInteractionEnabled:YES];
-        [[self tableView] reloadData];
+
+        
+        // TODO: user notification center instead.
+        [[NSNotificationCenter defaultCenter] postNotificationName:kDataLoadedSuccessNotification object:nil];
         
         if ([_venueItemsArray count]==0) {
             UIAlertView *alert = [[UIAlertView alloc]
