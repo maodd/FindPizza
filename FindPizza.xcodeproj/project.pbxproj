@@ -661,9 +661,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				INFOPLIST_FILE = FindPizza/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "57bb7354-c3a8-4321-b0b9-712ab49f34eb";
 			};
 			name = Release;
 		};
@@ -720,6 +722,7 @@
 				69DC3CA71B594D5600AF0DEC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		69DC3CA81B594D5600AF0DEC /* Build configuration list for PBXNativeTarget "FindPizzaTests" */ = {
 			isa = XCConfigurationList;
@@ -728,6 +731,7 @@
 				69DC3CAA1B594D5600AF0DEC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
