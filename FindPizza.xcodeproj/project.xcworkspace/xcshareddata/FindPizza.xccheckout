@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F53DD879-196F-4559-93C6-7EB95177F291</string>
+	<key>IDESourceControlProjectName</key>
+	<string>FindPizza</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D2B4114C5EB1E50E1F7B6EE97657E2D06F1FE89B</key>
+		<string>https://github.com/maodd/FindPizza.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>FindPizza.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D2B4114C5EB1E50E1F7B6EE97657E2D06F1FE89B</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/maodd/FindPizza.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D2B4114C5EB1E50E1F7B6EE97657E2D06F1FE89B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D2B4114C5EB1E50E1F7B6EE97657E2D06F1FE89B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>FindPizza</string>
+		</dict>
+	</array>
+</dict>
+</plist>
